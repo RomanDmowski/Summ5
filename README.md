@@ -17,8 +17,8 @@
    - Repository: This repository
    - Branch: main
    - Build Presets: Custom
-   - App location: `/client`
-   - Api location: `/api`
+   - App location: '/' not   `/client`
+   - Api location:  'api' not  `/api`
    - Output location: `dist/public`
 
 ### 2. Environment Variables
