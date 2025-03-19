@@ -1,8 +1,9 @@
+
 {
   "routes": [
     {
       "route": "/api/*",
-      "methods": ["GET", "POST"],
+      "methods": ["POST"],
       "rewrite": "/api/summarize"
     },
     {
@@ -13,7 +14,10 @@
   ],
   "navigationFallback": {
     "rewrite": "/index.html",
-    "exclude": ["/images/*.{png,jpg,gif}", "/css/*"]
+    "exclude": ["/images/*.{png,jpg,gif}", "/css/*", "/api/*"]
+  },
+  "platform": {
+    "apiRuntime": "node:18"
   },
   "mimeTypes": {
     ".json": "text/json"
